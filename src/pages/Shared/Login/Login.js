@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSendEmailVerification, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,11 +17,14 @@ const Login = () => {
         signInWithEmailAndPassword,
         user,
         loading,
-        error,
+        error
     ] = useSignInWithEmailAndPassword(auth);
-    const [sendEmailVerification, sending] = useSendEmailVerification(auth);
+    const [sendPasswordResetEmail, sending, restError] = useSendPasswordResetEmail(auth);
 
     if (loading) {
+        return <Loading></Loading>
+    }
+    if (sending) {
         return <Loading></Loading>
     }
 
@@ -40,7 +43,7 @@ const Login = () => {
     const resetPassword = async () => {
         const email = emailRef?.current?.value
         if (email) {
-            await sendEmailVerification(email)
+            await sendPasswordResetEmail(email)
             toast('Reset Email Sent')
         }
         else {
@@ -72,6 +75,7 @@ const Login = () => {
                                 <p><Button onClick={resetPassword} className=' text-dark text-decoration-none' variant="link"  ><span style={{ color: '#00796B' }}>Reset Password</span></Button></p>
                             </div>
                         </div>
+                        <p className='text-danger'>{restError?.message}</p>
                     </Form.Group>
                     <div className="border-0 d-grid">
                         <Button className="border-0" variant="primary" type="submit" style={{ backgroundColor: '#00796B' }} >
