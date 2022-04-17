@@ -1,0 +1,56 @@
+.title {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(224, 102, 21);
+}
+
+.title-asia {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    font-size: 60px;
+    font-weight: 600;
+
+}
+
+#explore-button {
+    position: absolute;
+    top: 320px;
+    left: 140px;
+}
+
+.title-america {
+    position: absolute;
+    top: 110px;
+    left: 140px;
+}
+
+#explore-button-usa {
+    position: absolute;
+    top: 155px;
+    left: 200px;
+}
+
+.title-euro {
+    position: absolute;
+    top: 190px;
+    left: 60px;
+}
+
+#explore-button-euro {
+    position: absolute;
+    top: 235px;
+    left: 100px;
+}
+
+.title-africa {
+    position: absolute;
+    top: 190px;
+    left: 60px;
+}
+
+#explore-button-africa {
+    position: absolute;
+    top: 235px;
+    left: 100px;
+}

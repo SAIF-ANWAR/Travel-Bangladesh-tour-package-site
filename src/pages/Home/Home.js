@@ -1,5 +1,7 @@
 import React from 'react';
-import coverPhoto from '../../images/travel-cover2.jpg'
+import coverPhoto from '../../images/travel-cover5.jpg'
+import Destinations from '../Destinations/Destinations';
+import Services from '../Services/Services';
 import './Home.css'
 const Home = () => {
     return (
@@ -14,7 +16,12 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <h1 className='text-center'>Services</h1>
+                <h1 className='text-center py-3' id='service'>Services</h1>
+                <Services></Services>
+            </div>
+            <div>
+                <h1 className='text-center py-3' id='service'>Top Destinations</h1>
+                <Destinations></Destinations>
             </div>
         </div>
     );
