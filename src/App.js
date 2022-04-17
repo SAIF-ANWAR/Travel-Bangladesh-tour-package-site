@@ -10,6 +10,7 @@ import Home from './pages/Home/Home';
 import NotFound from './pages/NotFound/NotFound';
 import Services from './pages/Services/Services';
 import Login from './pages/Shared/Login/Login';
+import RequireAuth from './pages/Shared/RequireAuth/RequireAuth';
 import SignUp from './pages/Shared/SignUp/SignUp';
 
 function App() {
@@ -23,7 +24,11 @@ function App() {
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
-        <Route path='/checkout' element={<CheckOut></CheckOut>}></Route>
+        <Route path='/checkout' element={
+          <RequireAuth>
+            <CheckOut></CheckOut>
+          </RequireAuth>
+        }></Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
