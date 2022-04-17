@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../Loading/Loading';
+import SocialLogIn from '../SocialLogin/SocialLogIn';
 
 const SignUp = () => {
     const navigate = useNavigate()
@@ -48,7 +49,7 @@ const SignUp = () => {
                     {/* <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Check onCanPlay={() => setAgree(!agree)} name="terms" type="checkbox" label="Accept terms & conditions" />
                     </Form.Group> */}
-                    <p className='text-danger'>{error.message}</p>
+                    <p className='text-danger'>{error?.message}</p>
                     <p className='text-danger'></p>
 
                     <div className="border-0 d-grid py-2">
@@ -62,6 +63,7 @@ const SignUp = () => {
                     </div>
                 </Form>
             </div>
+            <SocialLogIn></SocialLogIn>
         </div>
     );
 };

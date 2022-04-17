@@ -1,11 +1,19 @@
 import React from 'react';
-import github from '../../../images/social/github.png';
+import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import google from '../../../images/social/google.png';
+import Loading from '../Loading/Loading';
 
 const SocialLogIn = () => {
+    const [signInWithGoogle, loading, error] = useSignInWithGoogle(auth);
 
-    const GithubLogIn = event => {
-
+    const GoogleLogIn = event => {
+        signInWithGoogle()
     }
+    if (loading) {
+        return <Loading></Loading>
+    }
+
     return (
         <div>
             <div className='w-25 px-4 mx-auto'>
@@ -15,11 +23,12 @@ const SocialLogIn = () => {
                     <div className=' w-50' style={{ height: '1px', backgroundColor: '#AAAAAA' }}></div>
                 </div>
                 <div className='pb-5'>
-                    <button onClick={GithubLogIn} className='btn btn-light btn-outline-secondary d-block mx-auto rounded-pill my-2'>
-                        <img style={{ width: '30px' }} src={github} alt="" />
-                        <span className='px-3 text-dark'>Continue with Github</span>
+                    <p style={{ color: 'red' }}>{error?.message}</p>
+                    <button onClick={GoogleLogIn} className='btn btn-light btn-outline-secondary d-block mx-auto rounded-pill my-1'>
+                        <img style={{ width: '30px' }} src={google} alt="" />
+                        <span className='px-3 text-dark'>Continue with Google</span>
                     </button>
-                    <p style={{ color: 'red' }}></p>
+
                 </div>
             </div>
         </div>

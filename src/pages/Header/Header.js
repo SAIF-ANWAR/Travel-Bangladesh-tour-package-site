@@ -2,15 +2,18 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Button, Container, Form, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const Header = () => {
+    const navigate = useNavigate()
     const [user, loading, error] = useAuthState(auth);
 
     const handleLogOut = () => {
         signOut(auth)
+        navigate('/')
     }
+
 
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='py-3 fs-5' sticky='top'>
