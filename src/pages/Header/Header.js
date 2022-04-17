@@ -26,7 +26,7 @@ const Header = () => {
                         <Nav.Link as={Link} to="/destinations" href="#destinations">Destinations</Nav.Link>
                         <Nav.Link as={Link} to="/services" href="#pricing">Services</Nav.Link>
                         <Nav.Link as={Link} to="/blogs" href="#pricing">Blogs</Nav.Link>
-                        <Nav.Link as={Link} to="/contact" href="#pricing">Contact</Nav.Link>
+                        <Nav.Link as={Link} to="/about" href="#pricing">About</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 <Form className="d-flex fs-5">
