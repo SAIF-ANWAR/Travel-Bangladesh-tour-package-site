@@ -12,15 +12,17 @@ const Home = () => {
 
                 </div>
                 <div className='button'>
-                    <button className='btn px-4 py-2  fs-5 text-light' style={{ backgroundColor: '#3aa165' }}>Explore</button>
+                    <button className='btn px-4 py-2  fs-5 text-light' style={{ backgroundColor: '#00796B' }}>Explore</button>
                 </div>
             </div>
             <div>
-                <h1 className='text-center py-3' id='service'>Services</h1>
+                <h1 className='text-center py-0 mt-3' id='service'>Services</h1>
+                <hr />
                 <Services></Services>
             </div>
             <div>
-                <h1 className='text-center py-3' id='service'>Top Destinations</h1>
+                <h1 className='text-center py-0 mt-3' id='service'>Top Destinations</h1>
+                <hr />
                 <Destinations></Destinations>
             </div>
         </div>

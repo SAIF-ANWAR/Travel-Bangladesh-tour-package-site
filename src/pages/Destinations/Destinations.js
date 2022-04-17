@@ -14,7 +14,7 @@ const Destinations = () => {
                         <h1 className='title-asia'> ASIA</h1>
                     </div>
                     <div>
-                        <button id='explore-button' className='btn bg-dark border-0 px-4 bg-opacity-75 text-light rounded-pill'>Explore</button>
+                        <button id='explore-button' className='btn  border-0 px-4 bg-opacity-75 text-light rounded-pill'>Explore</button>
                     </div>
                 </div>
                 <div className='col-md-6'>
@@ -24,7 +24,7 @@ const Destinations = () => {
                                 <h1 className='title-america'> AMERICA</h1>
                             </div>
                             <div>
-                                <button id='explore-button-usa' className='btn bg-dark border-0 px-4 bg-opacity-75 text-light rounded-pill'>Explore</button>
+                                <button id='explore-button-usa' className='btn  border-0 px-4 bg-opacity-75 text-light rounded-pill'>Explore</button>
                             </div>
                         </div>
                         <div className='col-md-12 d-flex'>
@@ -33,7 +33,7 @@ const Destinations = () => {
                                     <h1 className='title-euro'> EUROPE</h1>
                                 </div>
                                 <div>
-                                    <button id='explore-button-euro' className='btn bg-dark border-0 px-4 bg-opacity-75 text-light rounded-pill'>Explore</button>
+                                    <button id='explore-button-euro' className='btn border-0 px-4 bg-opacity-75 text-light rounded-pill'>Explore</button>
                                 </div>
                             </div>
                             <div className='col-md-6 mx-2 title' style={{ backgroundImage: `url(${dest8})`, height: '400px', width: '280px' }}>
@@ -41,7 +41,7 @@ const Destinations = () => {
                                     <h1 className='title-africa'> AFRICA</h1>
                                 </div>
                                 <div>
-                                    <button id='explore-button-africa' className='btn bg-dark border-0 px-4 bg-opacity-75 text-light rounded-pill'>Explore</button>
+                                    <button id='explore-button-africa' className='btn border-0 px-4 bg-opacity-75 text-light rounded-pill'>Explore</button>
                                 </div>
                             </div>
 

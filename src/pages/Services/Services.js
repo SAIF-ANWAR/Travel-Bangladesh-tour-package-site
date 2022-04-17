@@ -13,7 +13,7 @@ const Services = () => {
                     <Card style={{ width: '22rem' }} className="shadow-lg">
                         <Card.Img variant="top" src={service1} />
                         <Card.Body>
-                            <Card.Title>Holiday Package</Card.Title>
+                            <Card.Title className='fs-4 fw-bold font-monospace'>Holiday Package</Card.Title>
                             <Card.Text>
                                 Holiday package is more expensive since it's holidays. The demand
                                 is higher than other occasions.
@@ -25,7 +25,7 @@ const Services = () => {
                             <ListGroupItem><span className='fw-bold'>Ratings:</span> 9/10</ListGroupItem>
                         </ListGroup>
                         <Card.Body>
-                            <Button as={Link} to="/checkout" variant="primary">Check Out</Button>
+                            <Button as={Link} to="/checkout" style={{ backgroundColor: '#00796B' }} className="border-0 px-4 py-2 fs-5">Check Out</Button>
                         </Card.Body>
                     </Card>
                 </div>
@@ -33,7 +33,7 @@ const Services = () => {
                     <Card style={{ width: '22rem' }} className="shadow-lg">
                         <Card.Img variant="top" src={service2} />
                         <Card.Body>
-                            <Card.Title>Regular Package</Card.Title>
+                            <Card.Title className='fs-4 fw-bold font-monospace'> Regular Package</Card.Title>
                             <Card.Text>
                                 Holiday package is more expensive since it's holidays. The demand
                                 is higher than other occasions.
@@ -45,7 +45,7 @@ const Services = () => {
                             <ListGroupItem><span className='fw-bold'>Ratings:</span> 8.5/10</ListGroupItem>
                         </ListGroup>
                         <Card.Body>
-                            <Button as={Link} to="/checkout" variant="primary">Check Out</Button>
+                            <Button as={Link} to="/checkout" style={{ backgroundColor: '#00796B' }} className="border-0 px-4 py-2 fs-5">Check Out</Button>
                         </Card.Body>
                     </Card>
                 </div>
@@ -53,7 +53,7 @@ const Services = () => {
                     <Card style={{ width: '22rem' }} className="shadow-lg">
                         <Card.Img variant="top" src={service3} />
                         <Card.Body>
-                            <Card.Title>Special Package</Card.Title>
+                            <Card.Title className='fs-4 fw-bold font-monospace'>Special Package</Card.Title>
                             <Card.Text>
                                 Holiday package is more expensive since it's holidays. The demand
                                 is higher than other occasions.
@@ -65,7 +65,7 @@ const Services = () => {
                             <ListGroupItem><span className='fw-bold'>Ratings:</span> 8/10</ListGroupItem>
                         </ListGroup>
                         <Card.Body>
-                            <Button as={Link} to="/checkout" variant="primary">Check Out</Button>
+                            <Button as={Link} to="/checkout" style={{ backgroundColor: '#00796B' }} className="border-0 px-4 py-2 fs-5">Check Out</Button>
                         </Card.Body>
                     </Card>
                 </div>

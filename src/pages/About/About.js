@@ -3,7 +3,6 @@ import picture from '../../images/saif.png'
 const About = () => {
     return (
         <div>
-            <h1>About Me</h1>
             <div className='card w-50 mx-auto px-4 py-4'>
                 <div className='card-body mx-auto py-0'>
                     <img className='shadow-lg rounded ' width={300} src={picture} alt="" />
