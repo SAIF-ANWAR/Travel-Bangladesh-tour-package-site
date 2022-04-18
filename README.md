@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-Live Site Link [Travel With BackPacker(https://lovely-choux-13e9e6.netlify.app/)]
+Live Site Link [Travel With BackPacker(https://lovely-choux-13e9e6.netlify.app/]
 
 This Website Contains:
     1. This website is all about providing travel guide to the national & Internation tourists
