@@ -60,3 +60,68 @@
     left: 100px;
     background-color: #00796B;
 }
+
+@media screen and (max-width: 400px) {
+    .title {
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(244, 237, 233);
+    }
+
+    .title-asia {
+        position: absolute;
+        top: 250px;
+        left: 150px;
+        font-size: 60px;
+        font-weight: 600;
+
+    }
+
+    #explore-button {
+        position: absolute;
+        top: 320px;
+        left: 170px;
+        background-color: #00796B;
+
+    }
+
+
+    .title-america {
+        position: absolute;
+        top: 90px;
+        left: 100px;
+    }
+
+    #explore-button-usa {
+        position: absolute;
+        top: 120px;
+        left: 120px;
+        background-color: #00796B;
+    }
+
+    .title-euro {
+        position: absolute;
+        top: 180px;
+        left: 30px;
+    }
+
+    #explore-button-euro {
+        position: absolute;
+        top: 220px;
+        left: 40px;
+        background-color: #00796B;
+    }
+
+    .title-africa {
+        position: absolute;
+        top: 200px;
+        left: 30px;
+    }
+
+    #explore-button-africa {
+        position: absolute;
+        top: 235px;
+        left: 40px;
+        background-color: #00796B;
+    }
+}

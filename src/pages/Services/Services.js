@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import service1 from '../../images/services/services-1.jpg'
 import service2 from '../../images/services/services-2.jpg'
 import service3 from '../../images/services/services-3.jpg'
+import './Services.css'
 
 const Services = () => {
     return (
         <div className='container'>
             <div className='row'>
                 <div className='col-md-4 py-2'>
-                    <Card style={{ width: '22rem' }} className="shadow-lg">
+                    <Card style={{ width: '22rem' }} className="shadow-lg service-box">
                         <Card.Img variant="top" src={service1} />
                         <Card.Body>
                             <Card.Title className='fs-4 fw-bold font-monospace'>Holiday Package</Card.Title>
@@ -30,7 +31,7 @@ const Services = () => {
                     </Card>
                 </div>
                 <div className='col-md-4 py-2'>
-                    <Card style={{ width: '22rem' }} className="shadow-lg">
+                    <Card style={{ width: '22rem' }} className="shadow-lg service-box">
                         <Card.Img variant="top" src={service2} />
                         <Card.Body>
                             <Card.Title className='fs-4 fw-bold font-monospace'> Regular Package</Card.Title>
@@ -50,7 +51,7 @@ const Services = () => {
                     </Card>
                 </div>
                 <div className='col-md-4  py-2'>
-                    <Card style={{ width: '22rem' }} className="shadow-lg">
+                    <Card style={{ width: '22rem' }} className="shadow-lg service-box">
                         <Card.Img variant="top" src={service3} />
                         <Card.Body>
                             <Card.Title className='fs-4 fw-bold font-monospace'>Special Package</Card.Title>

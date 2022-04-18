@@ -8,7 +8,7 @@ import dest8 from '../../images/Destination/dest8.jpg';
 const Destinations = () => {
     return (
         <div className='container d-block mx-auto mt-5'>
-            <div className='row'>
+            <div className='row justify-content-center'>
                 <div className='col-md-6  img-fluid title' style={{ backgroundImage: `url(${dest5})`, height: '619px', width: '450px' }}>
                     <div>
                         <h1 className='title-asia'> ASIA</h1>

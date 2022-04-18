@@ -53,20 +53,20 @@ const Login = () => {
     return (
         <div>
 
-            <div className='w-50 mx-auto mt-5'>
-                <Form onSubmit={handleLogIn} className='w-50 mx-auto border p-4'>
+            <div className='w-75 mx-auto mt-4'>
+                <Form onSubmit={handleLogIn} className='w-50 mx-auto border px-4 py-2'>
                     <h2 className='pb-3'>Login</h2>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="mb-2" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                         <p className='text-danger'> {resetError}</p>
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Group className="mb-2" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" name="password" placeholder="Password" required />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                    <Form.Group className="mb-0" controlId="formBasicCheckbox">
                         <div className='d-flex justify-content-between align-items-center'>
                             <div>
                                 <p>Forgot Password ?</p>
@@ -83,7 +83,7 @@ const Login = () => {
                         </Button>
                         <p className='text-danger'> {error?.message}</p>
                     </div>
-                    <div className='d-flex jsutify-content-around py-2'>
+                    <div className='d-flex jsutify-content-around '>
                         <p className='px-2'><small>Don't have an account?</small></p>
                         <a href="/signup" style={{ color: '#00796B' }}> create an account</a>
                     </div>

@@ -6,7 +6,9 @@ This Website Contains:
     2. THis website has multiple pages such as home page, blog page, about autho etc
     3. In the blog page you will find some question answer
     4. You can find my social links and office address at the footer section
-    
+
+In this project, I have used 1. React Router, 2.React-firebase Hooks, 3.Google Firebase, s 4.React Bootstrap, and 5.React toasitfy
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
