@@ -7,7 +7,7 @@ import dest8 from '../../images/Destination/dest8.jpg';
 
 const Destinations = () => {
     return (
-        <div className='container d-block mx-auto'>
+        <div className='container d-block mx-auto mt-5'>
             <div className='row'>
                 <div className='col-md-6  img-fluid title' style={{ backgroundImage: `url(${dest5})`, height: '619px', width: '450px' }}>
                     <div>

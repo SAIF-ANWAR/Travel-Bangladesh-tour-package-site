@@ -13,6 +13,7 @@ import Login from './pages/Shared/Login/Login';
 import RequireAuth from './pages/Shared/RequireAuth/RequireAuth';
 import SignUp from './pages/Shared/SignUp/SignUp';
 import About from './pages/About/About';
+import Destinations from './pages/Destinations/Destinations';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/services' element={<Services></Services>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/destinations' element={<Destinations></Destinations>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>

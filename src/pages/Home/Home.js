@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import coverPhoto from '../../images/travel-cover5.jpg'
 import Destinations from '../Destinations/Destinations';
 import Services from '../Services/Services';
@@ -12,7 +13,7 @@ const Home = () => {
 
                 </div>
                 <div className='button'>
-                    <button className='btn px-4 py-2  fs-5 text-light' style={{ backgroundColor: '#00796B' }}>Explore</button>
+                    <Link to="/destinations" className='btn px-4 py-2  fs-5 text-light' style={{ backgroundColor: '#00796B' }}>Explore</Link>
                 </div>
             </div>
             <div>
