@@ -1,0 +1,15 @@
+.list {
+    list-style: none;
+    color: white;
+    padding-left: 90px;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    color: white;
+    padding-top: 20px;
+}
